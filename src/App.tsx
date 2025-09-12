@@ -1,24 +1,26 @@
-
-
-import './App.css';
-import AgeInfo from './components/AgeInfo/AgeInfo';
-import Goodbye  from './components/Goodbye/Goodbye';
-import Greeting from './components/Greeting/Greeting';
+import "./App.css";
+import AgeInfo from "./components/AgeInfo/AgeInfo";
+import Counter from "./components/Counter/Counter";
+import DogCard from "./components/DogCard/DogCard";
+import Goodbye from "./components/Goodbye/Goodbye";
+import Greeting from "./components/Greeting/Greeting";
+import PersonalGreeting from "./components/PersonalGreeting/PersonalGreeting";
+import ProfileCard from "./components/ProfileCard/ProfileCard";
 
 function App() {
- 
   return (
     <div>
-    <p>Hello React!</p>
-    <Greeting />
-    <Greeting />
-    <Greeting />
-    {/*  */}
-    <p>It was nice to see you!</p>
-    <Goodbye name={"Bob"}/>
-    <Goodbye name={"John"}/>
-    <AgeInfo age={23} name={"Andy"}/>
-    <AgeInfo age={26} name={"Fred"}/> 
+      <PersonalGreeting/>
+      <Greeting />
+      <Counter />
+      <DogCard />
+      <ProfileCard name="Anna Metzer" description="Your personal assistent" />
+      <p>Live</p>
+
+      <Goodbye name={"Bob"} />
+      <Goodbye name={"John"} />
+      <AgeInfo age={23} name={"Andy"} />
+      <AgeInfo age={26} name={"Fred"} />
     </div>
   );
 }
