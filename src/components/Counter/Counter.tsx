@@ -9,9 +9,7 @@ export default function Counter() {
   // - что принимает? Начальное значение переменной состояния.
   // - что возвращает? Создает стек, изменения которого вызывают ренрендер
 
-  function printCounter() {
-    console.log(counter);
-  }
+ 
   function handleAddOne() {
     setCounter(counter + 1);
   }
