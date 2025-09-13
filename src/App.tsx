@@ -10,11 +10,15 @@ import ProfileCard from "./components/ProfileCard/ProfileCard";
 function App() {
   return (
     <div>
-      <PersonalGreeting/>
+      <PersonalGreeting />
       <Greeting />
       <Counter />
       <DogCard />
-      <ProfileCard name="Anna Metzer" description="Your personal assistent" />
+      <ProfileCard
+       name="Anna Metzer"
+       description="Your personal assistent"
+       avatar="https://avatar.iran.liara.run/public/87"
+       />
       <p>Live</p>
 
       <Goodbye name={"Bob"} />
