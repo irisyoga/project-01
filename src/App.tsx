@@ -6,6 +6,7 @@ import Goodbye from "./components/Goodbye/Goodbye";
 import Greeting from "./components/Greeting/Greeting";
 import PersonalGreeting from "./components/PersonalGreeting/PersonalGreeting";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
+import SpaceMissionForm from "./components/SpaceMissionForm/SpaceMissionForm";
 
 function App() {
   return (
@@ -15,16 +16,17 @@ function App() {
       <Counter />
       <DogCard />
       <ProfileCard
-       name="Anna Metzer"
-       description="Your personal assistent"
-       avatar="https://avatar.iran.liara.run/public/87"
-       />
+        name="Anna Metzer"
+        description="Your personal assistent"
+        avatar="https://avatar.iran.liara.run/public/87"
+      />
       <p>Live</p>
 
       <Goodbye name={"Bob"} />
       <Goodbye name={"John"} />
       <AgeInfo age={23} name={"Andy"} />
       <AgeInfo age={26} name={"Fred"} />
+      <SpaceMissionForm  />
     </div>
   );
 }
