@@ -1,5 +1,6 @@
 import { useState } from "react";
 import s from "./SpaceMissionForm.module.css";
+import spaceman from "../../assets/spaceman.webp";
 
 type Planet = "mars" | "venus" | "jupiter" | "saturn";
 export default function SpaceMissionForm() {
@@ -20,7 +21,8 @@ export default function SpaceMissionForm() {
   return (
     <div className={s.container}>
       <h2>🚀 Space Mission Registration</h2>
-      <img src="https://cdn.langeek.co/photo/50639/original/astronaut?type=jpeg" alt="astronaut" />
+      <img src={spaceman} alt="astronaut" className={s.astronaut} />
+      {/* <img src="https://cdn.langeek.co/photo/50639/original/astronaut?type=jpeg" alt="astronaut" /> */}
 
       {/* Поле для имени */}
 
